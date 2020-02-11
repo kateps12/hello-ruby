@@ -27,3 +27,24 @@
 # We can specify multiple conditions with || (OR) and && (AND)
 # if dinner == "tacos" || dinner == "pizza"
 
+dice1 = rand(1..6)
+dice2 = rand(1..6)
+total = dice1 + dice2
+
+puts "Hello - Welcome to the Game of Craps! 
+#{dice1}
+#{dice2}
+Total = #{total}"
+
+if total == 7 || total == 11
+    puts "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU ARE A BIG LOSER!"
+else 
+    puts "The Point is #{total}"
+end
+# If the numbers add up to 7 or 11, write a message that reads
+# "YOU WIN!", if they add up to 2, 3, or 12, write a message
+# that reads "YOU LOSE!", otherwise, write a message that
+# reads "THE POINT IS {number}"
+

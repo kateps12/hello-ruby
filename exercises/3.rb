@@ -15,3 +15,9 @@
 # Learn to read the documentation!
 # http://ruby-doc.org/core-2.5.1/Array.html
 
+mylist = ["half_and_half", "cheese", "salad", "dog_cookies", "cab_sav"]
+friendlist = ["baby_peppers", "pinot", "crackers", "cheese"]
+shopping_list = mylist + friendlist
+
+puts shopping_list.sort
+puts shopping_list.sort.uniq

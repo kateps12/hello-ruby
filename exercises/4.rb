@@ -27,3 +27,11 @@ weather_data = {
   ]
 }
 
+
+puts "Currently it is #{weather_data[:current][:temperature]} and #{weather_data[:current][:conditions]}. Tomorrow it will be #{weather_data[:forecast][0][:temperature]} and #{weather_data[:forecast][0][:conditions]}."
+puts "The next day we will see #{weather_data[:forecast][1][:conditions]} skies, with a temperature of #{weather_data[:forecast][1][:temperature]}."
+
+# write a weather summary out to the screen. Something like this:
+
+# Currently it is 67 degrees and sunny. Tomorrow it will be 65 and Mostly Cloudy.
+# The next day it we will see Partly Cloudy skies, with a temperature of 70.
